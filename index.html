@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Botanics</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Bungee+Shade&family=Creepster&family=DynaPuff&family=Ewert&family=Faster+One&family=Fruktur&family=Kumar+One+Outline&family=Luckiest+Guy&family=Modak&family=Monoton&family=Nabla&family=Oi&family=Piedra&family=Rubik+Bubbles&family=Shrikhand&family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'earth-beige': '#F5F1E8',
+              'deep-brown': '#2A1B18',
+              'sage-green': '#8A9A7B',
+              'royal-gold': '#D4AF37',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+              'bounce-slow': 'bounce 3s infinite',
+            },
+            transitionTimingFunction: {
+              'expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth Scrolling for anchor links */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Hide scrollbar for cleaner look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F5F1E8; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2A1B18; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8A9A7B; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
