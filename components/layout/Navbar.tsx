@@ -61,7 +61,10 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 bg-earth-beige z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-500 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div 
+        className={`fixed inset-0 bg-earth-beige z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-500 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        style={{ transform: mobileMenuOpen ? 'translateX(0)' : 'translateX(100%)' }}
+      >
          <a href="#philosophy" onClick={() => setMobileMenuOpen(false)} className="font-serif text-3xl text-deep-brown">Philosophy</a>
          <a href="#shop" onClick={() => setMobileMenuOpen(false)} className="font-serif text-3xl text-deep-brown">Shop</a>
          <a href="#ritual" onClick={() => setMobileMenuOpen(false)} className="font-serif text-3xl text-deep-brown">Ritual</a>

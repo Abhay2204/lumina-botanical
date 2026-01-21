@@ -16,6 +16,7 @@ const CartSidebar: React.FC = () => {
       {/* Sidebar */}
       <div 
         className={`fixed top-0 right-0 h-full w-full max-w-md bg-earth-beige z-[70] shadow-2xl transition-transform duration-500 ease-out transform ${isCartOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        style={{ transform: isCartOpen ? 'translateX(0)' : 'translateX(100%)' }}
       >
         <div className="h-full flex flex-col p-8">
           <div className="flex justify-between items-center mb-8 border-b border-deep-brown/10 pb-4">

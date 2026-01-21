@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
     
     let count = 0;
     const minChanges = 20; // Increased to show off more fonts
-    const intervalDuration = 100; 
+    const intervalDuration = 200; // Slowed down from 100ms to 200ms 
 
     const fontInterval = setInterval(() => {
       if (titleRef.current) {
